@@ -72,9 +72,14 @@ const Navbar = () => {
                       <button onClick={handleSignOut} className="py-3 px-5 text-white font-medium rounded-lg bg-sky-700 ">Sign Out</button>
                   </div>
                     :
-                    <Link to={'/login'}>
+                   <div className='flex items-center gap-4'>
+                     <Link to={'/login'}>
                         <button className="py-3 px-5 text-white font-medium rounded-lg bg-sky-700 ">Login</button>
                     </Link>
+                     <Link to={'/register'}>
+                        <button className="py-3 px-5 text-white font-medium rounded-lg bg-sky-700 ">Register</button>
+                    </Link>
+                   </div>
             }
 
 
