@@ -1,0 +1,158 @@
+[
+  {
+    "_id": "1",
+    "brand_name": "Daraz",
+    "rating": 4.5,
+    "description": "Leading online marketplace offering a wide range of products at competitive prices.",
+    "brand_logo": "https://i.ibb.co.com/b5zbJyw/daraz.jpg",
+    "coupons": [
+      {
+        "coupon_code": "DARAZ10",
+        "description": "10% off on your first purchase.",
+        "expiry_date": "2024-12-31",
+        "condition": "Valid for new users only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "FREESHIP",
+        "description": "Free shipping on orders over $30.",
+        "expiry_date": "2024-11-30",
+        "condition": "Applicable for selected products.",
+        "coupon_type": "Shipping"
+      }
+    ],
+    "shop_Link": "https://www.daraz.com.bd/#?",
+    "category": "Marketplace",
+    "isSaleOn": true
+  },
+  {
+    "_id": "2",
+    "brand_name": "BATA",
+    "rating": 4.6,
+    "description": "Premium footwear brand offering comfortable and stylish shoes for all occasions.",
+    "brand_logo": "https://i.ibb.co.com/h8Lq3Fn/images-1.png",
+    "coupons": [
+      {
+        "coupon_code": "BATA15",
+        "description": "15% off on all footwear.",
+        "expiry_date": "2024-11-25",
+        "condition": "Valid on purchases over $50.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "BUY1GET1",
+        "description": "Buy 1, Get 1 free on selected items.",
+        "expiry_date": "2024-12-10",
+        "condition": "Limited to in-store purchases.",
+        "coupon_type": "Offer"
+      }
+    ],
+    "shop_Link": "https://www.batabd.com/",
+    "category": "Footwear",
+    "isSaleOn": false
+  },
+  {
+    "_id": "3",
+    "brand_name": "Apex",
+    "rating": 4.3,
+    "description": "Affordable and stylish footwear for all age groups.",
+    "brand_logo": "https://i.ibb.co.com/2F61CJy/apex.jpg",
+    "coupons": [
+      {
+        "coupon_code": "APEX20",
+        "description": "20% off on new arrivals.",
+        "expiry_date": "2024-12-01",
+        "condition": "Online purchases only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "SAVE25",
+        "description": "$25 off on purchases over $100.",
+        "expiry_date": "2024-12-20",
+        "condition": "Valid on select products.",
+        "coupon_type": "Flat"
+      }
+    ],
+    "shop_Link": "https://apex4u.com/",
+    "category": "Footwear",
+    "isSaleOn": true
+  },
+  {
+    "_id": "4",
+    "brand_name": "Dior",
+    "rating": 4.8,
+    "description": "Luxury fashion house offering high-end clothing and accessories.",
+    "brand_logo": "https://i.ibb.co.com/NyFqCSf/dior.jpg",
+    "coupons": [
+      {
+        "coupon_code": "DIOR25",
+        "description": "25% off on select collections.",
+        "expiry_date": "2024-11-30",
+        "condition": "Available at flagship stores only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "FREEGIFT",
+        "description": "Free gift with purchases over $200.",
+        "expiry_date": "2024-12-31",
+        "condition": "While stocks last.",
+        "coupon_type": "Gift"
+      }
+    ],
+    "shop_Link": "https://www.dior.com/en_int/fashion",
+    "category": "Luxury Fashion",
+    "isSaleOn": true
+  },
+  {
+    "_id": "5",
+    "brand_name": "Chanel",
+    "rating": 4.9,
+    "description": "Iconic brand known for its luxury fashion, perfumes, and accessories.",
+    "brand_logo": "https://i.ibb.co.com/0FKDW74/chanel.png",
+    "coupons": [
+      {
+        "coupon_code": "CHANEL20",
+        "description": "20% off on beauty products.",
+        "expiry_date": "2024-12-15",
+        "condition": "Valid for online purchases.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "LUXE100",
+        "description": "$100 off on purchases over $500.",
+        "expiry_date": "2024-12-05",
+        "condition": "Limited to accessories.",
+        "coupon_type": "Flat"
+      }
+    ],
+    "shop_Link": "https://www.chanel.com/us/",
+    "category": "Luxury",
+    "isSaleOn": false
+  },
+  {
+    "_id": "6",
+    "brand_name": "Mac",
+    "rating": 4.7,
+    "description": "High-quality makeup and skincare products for beauty enthusiasts.",
+    "brand_logo": "https://i.ibb.co.com/bvPBZQn/MAC.jpg",
+    "coupons": [
+      {
+        "coupon_code": "MAC10",
+        "description": "10% off on lipsticks.",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "MACSET",
+        "description": "Free makeup set on purchases over $150.",
+        "expiry_date": "2024-11-30",
+        "condition": "Online exclusive.",
+        "coupon_type": "Gift"
+      }
+    ],
+    "shop_Link": "https://www.maccosmetics.com/",
+    "category": "Cosmetics",
+    "isSaleOn": true
+  }
+]
