@@ -38,7 +38,7 @@ const Navbar = () => {
                     {links}
                 </ul>
             </div>
-            <a className=" normal-case font-bold text-3xl">Coupon Catcher</a>
+            <a className=" normal-case font-bold text-2xl">Coupon<span className="text-4xl text-sky-700">Catcher</span></a>
         </div>
         <div className="navbar-center hidden lg:flex">
             <ul className=" active mx-5  flex justify-center items-center gap-6 px-1 menu-horizontal font-medium text-lg ">
