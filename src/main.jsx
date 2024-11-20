@@ -12,6 +12,9 @@ import ErrorPage from './ErrorPage.jsx';
 import Login from './components/login/Login.jsx';
 import Register from './components/register/Register.jsx';
 import AuthProvider from './components/provider/AuthProvider.jsx';
+import Brands from './components/brands/Brands.jsx';
+import BrandDetails from './components/brands/BrandDetails.jsx';
+import PrivateRoute from './components/privateRoute/PrivateRoute.jsx';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +37,16 @@ const router = createBrowserRouter([
       {
         path: "aboutDev",
         element: <Home></Home>,
+      },
+      {
+        path: "/brands",
+        element: <Brands></Brands>,
+        loader:() => fetch('/donation.json')
+      },
+      {
+        path: "/brand/:id",
+        element:<PrivateRoute><BrandDetails></BrandDetails></PrivateRoute>,
+        loader:() => fetch('/donation.json')
       },
     ],
   },
