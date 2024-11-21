@@ -38,7 +38,10 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className=" normal-case font-bold text-lg md:text-3xl lg:text-3xl">Coupon<span className="text-2xl md:text-4xl lg:text-4xl text-sky-700">Catcher</span></a>
+                <a className=" flex justify-center items-center normal-case font-bold text-lg md:text-3xl lg:text-3xl"> 
+                    <img className="h-20 w-20" src={'https://i.ibb.co.com/RCPtdcP/5629119.png'} alt="" />
+                    
+                    Coupon<span className="text-2xl md:text-4xl lg:text-4xl text-sky-700">Catcher</span></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className=" active mx-5  flex justify-center items-center gap-6 px-1 menu-horizontal font-medium text-lg ">

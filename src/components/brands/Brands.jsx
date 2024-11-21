@@ -4,7 +4,7 @@ import BrandsCard from "./BrandsCard";
 
 const Brands = () => {
     const brands = useLoaderData()
-    console.log(brands)
+    
     return (
         <div className="mt-20">
             

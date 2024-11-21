@@ -23,7 +23,7 @@ return createUserWithEmailAndPassword(auth, email, password)
             displayName:name,
             photoURL:photo,
         }
-        console.log(auth.currentUser)
+        // console.log(auth.currentUser)
         return updateProfile(auth.currentUser, profile)
     }
 

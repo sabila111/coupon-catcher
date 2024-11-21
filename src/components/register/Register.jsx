@@ -21,7 +21,7 @@ const Register = () => {
   const handleGoogle = () => {
     signInWithPopup(auth, provider)
       .then(result => {
-        console.log(result.user)
+        // console.log(result.user)
         navigate(location?.state ? location.state : '/')
       })
    
@@ -32,13 +32,13 @@ const Register = () => {
 
   const handleRegister = e => {
     e.preventDefault()
-    console.log(e.currentTarget)
+    
     const form = new FormData(e.currentTarget)
     const name = form.get('name')
     const email = form.get('email')
     const password = form.get('password')
     const photoURL = form.get('photoURL')
-    console.log(name, email, password, photoURL)
+    
 
     setRegisterError('')
     setSuccess('')
@@ -58,7 +58,7 @@ const Register = () => {
 
     CreateUser(email, password)
       .then(result => {
-        console.log(result.user)
+       
         alert('User Created Successfully')
 
         navigate(location?.state ? location.state : '/')
@@ -68,7 +68,7 @@ const Register = () => {
         alert('Email already existed')
       })
       .then(result => {
-        console.log(result.user)
+        
         return UpdateUser(name, photoURL)
       })
 

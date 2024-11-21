@@ -4,7 +4,7 @@
 Coupon Catcher is a web application that allows users to view and access various coupons. The project focuses on providing a user-friendly experience for discovering and copying coupons.
 
 ## Live URL
-[Insert your live URL here]
+https://assignment-9-ef1bf.web.app/
 
 ## Key Features
 - **React-based application**: Built with React for a responsive and dynamic user interface.

@@ -25,7 +25,7 @@ const Login = () => {
     const handleGoogle = () =>{
         signInWithPopup(auth, provider)
         .then( result => {
-            console.log(result.user)
+            // console.log(result.user)
             navigate(location?.state ? location.state : '/')
         })
            
@@ -35,14 +35,14 @@ const Login = () => {
 
     const handleLogin = e => {
         e.preventDefault()
-        console.log(e.currentTarget)
+        
         const form = new FormData(e.currentTarget)
         const email = form.get('email')
         const password = form.get('password')
-        console.log(form)
+        
         signIn(email, password)
             .then(result => {
-                console.log(result.user)
+                
                 
             })
             navigate(location?.state ? location.state : '/')

@@ -18,7 +18,7 @@ const ForgetPassword = () => {
 
     const handleResetPassword = e => {
         e.preventDefault()
-        console.log(e.currentTarget)
+        // console.log(e.currentTarget)
         const form = e.target;
     const email = form.email.value;
     window.open("https://mail.google.com", "_blank");

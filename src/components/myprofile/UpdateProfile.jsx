@@ -17,7 +17,7 @@ const UpdateProfile = () => {
         const form = new FormData(e.currentTarget)
         const updatedName = form.get('name')
         const updatedPhotoURL = form.get('photoURL')
-        console.log(updatedName, updatedPhotoURL)
+        
 
 
         UpdateUser( updatedName, updatedPhotoURL)
