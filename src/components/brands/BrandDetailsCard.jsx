@@ -25,6 +25,7 @@ const BrandDetailsCard = ({brand}) => {
      </CopyToClipboard>
 
       <button onClick={()=> window.open(shop_Link, 'blank')} className="text-xl font-semibold px-4 py-3 bg-white text-sky-700 rounded-xl border-2 border-sky-700">use Now</button>
+      {/* <a target='_blank' href={shop_Link}> </a> */}
     </div>
   </div>
   <ToastContainer />

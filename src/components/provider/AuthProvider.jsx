@@ -18,8 +18,13 @@ const AuthProvider = ({children}) => {
 return createUserWithEmailAndPassword(auth, email, password)
     }
 
-    const UpdateUser = (displayName, photoURL) => {
-        return updateProfile(auth.currentUser, {displayName, photoURL})
+    const UpdateUser = (name, photo) => {
+        const profile = {
+            displayName:name,
+            photoURL:photo,
+        }
+        console.log(auth.currentUser)
+        return updateProfile(auth.currentUser, profile)
     }
 
     const signIn = (email, password) => {
@@ -39,7 +44,7 @@ const UnScribe = onAuthStateChanged(auth, currentUser => {
     setLoading(false)
 })
 return() => {
-    UnScribe
+    return UnScribe()
 }
 
     },[])

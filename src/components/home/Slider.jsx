@@ -1,7 +1,7 @@
 
 const Slider = () => {
     return (
-        <div className="carousel w-full h-96 mt-16">
+        <div className="carousel w-full h-96 mt-10">
   <div id="slide1" className="carousel-item relative w-full">
     <img
       src="https://i.ibb.co.com/G5dykZ5/5.jpg"

@@ -20,9 +20,9 @@ const UpdateProfile = () => {
         console.log(updatedName, updatedPhotoURL)
 
 
-        UpdateUser(auth.currentUser, {displayName: updatedName, photoURL: updatedPhotoURL})
+        UpdateUser( updatedName, updatedPhotoURL)
         .then(result => {
-            console.log(result.user)
+            // console.log(result.user)
         alert('Updated Successfully')
         navigate(location?.state ? location.state : '/profile')
         })

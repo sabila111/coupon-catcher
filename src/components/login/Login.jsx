@@ -48,19 +48,23 @@ const Login = () => {
         <div className="mt-12 mx-auto  w-3/4">
 
         <form onSubmit={handleLogin} className="card-body md:w-3/4 lg:w-1/2 mx-auto ">
+        <h2 className='text-center text-4xl font-extrabold mb-7'>Login Form</h2>
             <div className="form-control">
                 <label className="label">
-                    <span className="label-text">Email</span>
+                    <span className="label-text text-base font-medium">Email</span>
                 </label>
-                <input type="email" placeholder="email" name="email" className="input input-bordered" required />
+                <input type="email" placeholder="email" name="email" className="input input-bordered text-base font-medium" required />
             </div>
             <div className="form-control">
                 <label className="label">
-                    <span className="label-text">Password</span>
+                    <span className="label-text text-base font-medium">Password</span>
                 </label>
-                <input type="password" name="password" placeholder="password" className="input input-bordered" required />
+                <input type="password" name="password" placeholder="password" className="input input-bordered text-base font-medium" required />
 
             </div>
+            <label className="label">
+            <a href="#" className="label-text-alt link link-hover text-base font-medium">Forgot password?</a>
+          </label>
             <div className="form-control mt-6">
                 <button className="w-full py-3 px-4 rounded-lg bg-sky-700 text-white">Login</button>
             </div>
