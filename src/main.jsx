@@ -18,6 +18,8 @@ import PrivateRoute from './components/privateRoute/PrivateRoute.jsx';
 import MyProfile from './components/myprofile/MyProfile.jsx';
 import UpdateProfile from './components/myprofile/UpdateProfile.jsx';
 import AbotDev from './components/AbotDev.jsx';
+import ForgetPassword from './components/forgetPass/ForgetPassword.jsx';
+
 
 const router = createBrowserRouter([
   {
@@ -41,6 +43,11 @@ const router = createBrowserRouter([
         path: "aboutDev",
         element:<AbotDev></AbotDev>,
       },
+      {
+        path: "/login/password",
+        element:<ForgetPassword></ForgetPassword>,
+      },
+      
       {
         path: "/profile",
         element: <PrivateRoute><MyProfile></MyProfile></PrivateRoute>,

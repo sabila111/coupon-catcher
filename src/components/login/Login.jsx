@@ -15,6 +15,12 @@ const Login = () => {
     const navigate = useNavigate()
 
     const [Error, setError] = useState('')
+    const[email, setEmail] = useState('')
+
+    const handleForgetPassword =() => {
+        localStorage.setItem('email',JSON.stringify(email))
+        navigate('/login/password')
+    }
 
     const handleGoogle = () =>{
         signInWithPopup(auth, provider)
@@ -37,8 +43,9 @@ const Login = () => {
         signIn(email, password)
             .then(result => {
                 console.log(result.user)
-                navigate(location?.state ? location.state : '/')
+                
             })
+            navigate(location?.state ? location.state : '/')
             .catch(error => {
                 console.error(error)
 
@@ -55,7 +62,13 @@ const Login = () => {
                 <label className="label">
                     <span className="label-text text-base font-medium">Email</span>
                 </label>
-                <input type="email" placeholder="email" name="email" className="input input-bordered text-base font-medium" required />
+                <input
+                onChange={(e)=>setEmail(e.target.value)} 
+                type="email" 
+                placeholder="email"
+                name="email"
+                className="input input-bordered text-base font-medium" 
+                required />
             </div>
             <div className="form-control">
                 <label className="label">
@@ -65,7 +78,10 @@ const Login = () => {
 
             </div>
             <label className="label">
-            <a href="#" className="label-text-alt link link-hover text-base font-medium">Forgot password?</a>
+                <span onClick={handleForgetPassword} className="label-text-alt link link-hover text-base font-medium">Forgot password?</span>
+              
+            
+            
           </label>
             <div className="form-control mt-6">
                 <button className="w-full py-3 px-4 rounded-lg bg-sky-700 text-white">Login</button>

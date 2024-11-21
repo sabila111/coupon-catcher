@@ -30,13 +30,13 @@ const BrandsCard = ({ brand }) => {
             </div>
 
             <p className="text-gray-600 font-semibold text-center mt-4">{description}</p>
-            <PrivateRoute>
+            
             <div className="text-center">
                 <Link to={`/brand/${brand._id}`}>
                 <button className="px-3 py-4 rounded-xl font-bold text-xl bg-sky-700 text-white my-5 ">View Coupons</button>
                 </Link>
             </div>
-            </PrivateRoute>
+          
             {
                 isSaleOn && (<p className="animate__animated animate__bounce animate__delay-3s font-bold text-center text-2xl text-sky-700 pb-8">🔥 Sale is On!!</p>)
             }

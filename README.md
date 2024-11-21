@@ -1,8 +1,19 @@
-# React + Vite
+# Coupon Catcher
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Purpose
+Coupon Catcher is a web application that allows users to view and access various coupons. The project focuses on providing a user-friendly experience for discovering and copying coupons.
 
-Currently, two official plugins are available:
+## Live URL
+[Insert your live URL here]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
+- **React-based application**: Built with React for a responsive and dynamic user interface.
+- **Fast Marquee**: Displays moving content with the `React Fast Marquee` package.
+- **Copy-to-Clipboard**: Users can easily copy coupon details using the `react-copy-to-clipboard` package.
+- **Animations**: Smooth, attention-grabbing animations with `Animate.css` for enhanced user experience.
+
+## npm Packages Used
+- **React**: JavaScript library for building user interfaces.
+- **React Fast Marquee**: Enables smooth scrolling for content.
+- **react-copy-to-clipboard**: Provides a way to copy text to the clipboard.
+- **Animate.css**: A library for adding CSS animations to elements.
