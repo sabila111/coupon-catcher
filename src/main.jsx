@@ -15,6 +15,8 @@ import AuthProvider from './components/provider/AuthProvider.jsx';
 import Brands from './components/brands/Brands.jsx';
 import BrandDetails from './components/brands/BrandDetails.jsx';
 import PrivateRoute from './components/privateRoute/PrivateRoute.jsx';
+import MyProfile from './components/myprofile/MyProfile.jsx';
+import UpdateProfile from './components/myprofile/UpdateProfile.jsx';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +39,14 @@ const router = createBrowserRouter([
       {
         path: "aboutDev",
         element: <Home></Home>,
+      },
+      {
+        path: "/profile",
+        element: <PrivateRoute><MyProfile></MyProfile></PrivateRoute>,
+      },
+      {
+        path: "/UpdateProfile",
+        element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>,
       },
       {
         path: "/brands",

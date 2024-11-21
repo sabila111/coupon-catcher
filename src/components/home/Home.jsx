@@ -1,3 +1,4 @@
+import Footer from "../footer/Footer";
 import BrandSell from "./BrandSell";
 import Slider from "./Slider";
 import TopBrands from "./TopBrands";
