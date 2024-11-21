@@ -10,7 +10,7 @@ const Welcome = () => {
           Welcome, <span className="font-bold">{user.displayName || "User"}</span>!
         </p>
       ) : (
-        <p className="text-sm text-gray-600">Welcome! Please log in.</p>
+        <p className="text-sm text-gray-600"></p>
       )}
         </div>
     );

@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 const BrandsCard = ({ brand }) => {
     const { brand_name, rating, description, brand_logo, isSaleOn, category } = brand
     return (
-        <div className="card p-5 mb-10 bg-base-100 max-w-xl mx-auto shadow-xl">
+        <div className="card p-5 mb-10 bg-base-100 max-w-sm md:max-w-xl lg:max-w-xl mx-auto shadow-xl">
             <figure>
                 <img
-                    className="w-full h-72 rounded-xl"
+                    className="w-full h-48 md:h-72 lg:h-72 rounded-xl"
                     src={brand_logo} />
             </figure>
 

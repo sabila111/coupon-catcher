@@ -22,8 +22,9 @@ const Register = () => {
     signInWithPopup(auth, provider)
       .then(result => {
         console.log(result.user)
+        navigate(location?.state ? location.state : '/')
       })
-    navigate(location?.state ? location.state : '/')
+   
       .catch(error => {
         console.error(error.message)
       })
@@ -119,7 +120,7 @@ const Register = () => {
         </div>
       </form>
 
-      <button onClick={handleGoogle} className="py-2 px-4 bg-sky-700 rounded-full text-center items-center mx-auto ml-72 text-white">Google</button>
+      <button onClick={handleGoogle} className="py-2 px-4 bg-sky-700 rounded-full text-center items-center mx-auto md:ml-28 lg:ml-72 text-white">Google</button>
 
       {
         registerError && <p className='text-red-500 text-center'>{registerError}</p>

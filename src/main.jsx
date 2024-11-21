@@ -17,6 +17,7 @@ import BrandDetails from './components/brands/BrandDetails.jsx';
 import PrivateRoute from './components/privateRoute/PrivateRoute.jsx';
 import MyProfile from './components/myprofile/MyProfile.jsx';
 import UpdateProfile from './components/myprofile/UpdateProfile.jsx';
+import AbotDev from './components/AbotDev.jsx';
 
 const router = createBrowserRouter([
   {
@@ -38,7 +39,7 @@ const router = createBrowserRouter([
       },
       {
         path: "aboutDev",
-        element: <Home></Home>,
+        element:<AbotDev></AbotDev>,
       },
       {
         path: "/profile",

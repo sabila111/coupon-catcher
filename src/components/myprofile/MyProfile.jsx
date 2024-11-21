@@ -15,19 +15,19 @@ const MyProfile = () => {
 
         <div className="hero-content text-neutral-content text-center">
           <div className="max-w-md">
-            <h1 className="mb-5 text-black text-5xl font-bold">Welcome to Your Profile</h1>
+            <h1 className="mb-5 text-black text-3xl md:text-5xl lg:text-5xl font-bold">Welcome to Your Profile</h1>
 
           </div>
         </div>
       </div>
 
-      <div className="card bg-base-100 max-w-sm mx-auto shadow-xl mt-10 mb-5 text-center">
+      <div className="card bg-base-100 max-w-xs md:max-w-sm lg:max-w-sm mx-auto shadow-xl mt-10 mb-5 text-center">
   <figure>
     <img className="w-full h-48 p-4 rounded-3xl"
       src={user.photoURL} />
   </figure>
   <div className="ml-4">
-    <h2 className="text-2xl font-bold ">Name: {user.displayName}</h2>
+    <h2 className="text-xl md:text-2xl lg:text-2xl font-bold ">Name: {user.displayName}</h2>
     <p className="font-semibold text-lg text-gray-500 mb-3">Email: {user.email}</p>
     <Link to='/UpdateProfile'>
     <button className="px-4 py-3 mb-5 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-400 text-white font-bold text-lg">Update Profile</button>

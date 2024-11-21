@@ -8,7 +8,7 @@ const Brands = () => {
     return (
         <div className="mt-20">
             
-            <label className="max-w-5xl mx-auto input input-bordered flex items-center gap-2">
+            <label className="max-w-sm md:max-w-2xl lg:max-w-5xl mx-auto input input-bordered flex items-center gap-2">
                 <input type="text" className="grow" placeholder="Search" />
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +22,7 @@ const Brands = () => {
                 </svg>
             </label>
 
-            <h2 className="text-4xl font-bold  text-center mt-10">Our <span className="bg-sky-700 text-white pl-2">available </span> all brands</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold  text-center mt-10">Our <span className="bg-sky-700 text-white pl-2">available </span> all brands</h2>
             <div className="mt-14">
                 {
                     brands.map(brand => <BrandsCard key={brand._id} brand={brand}></BrandsCard>)
