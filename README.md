@@ -22,6 +22,18 @@ https://assignment-9-ef1bf.web.app/
 - **react-copy-to-clipboard**: Provides a way to copy text to the clipboard.
 - **Animate.css**: A library for adding CSS animations to elements.
 
+## Dependencies
+"dependencies": {
+    "animate.css": "^4.1.1",
+    "firebase": "^11.0.2",
+    "react": "^18.3.1",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^18.3.1",
+    "react-fast-marquee": "^1.6.5",
+    "react-icons": "^5.3.0",
+    "react-toastify": "^10.0.6"
+  },
+
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/sabila111/coupon-catcher]  ```
